@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="public/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="heading--container"><h1>Grow Profit</h1></div>
+        <nav class="nav">
+          <ul>
+            <a href=""> <li>Business Blogs</li></a>
+            <a href=""><li>Business Grants and Loan</li></a>
+            <a href=""><li>Network</li></a>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+    <div class="flex-container">
+        <div class="one">
+             <form action="">
+                <h3>Grow Profit Business Calculator</h3>
+               
+                <label for="GFG">What type of business</label><br>
+                <input id="tob" type="Text" onchange="businessTypeCommodityName()">
+                <!-- <select name="" id="">
+                    <option value="">Retail</option>
+                    <option value="">Wholesale</option>
+                    <option value="">Distrubtor</option>
+                    <option value="">Manufacturer</option>
+                </select> -->
+                <br>
+                <label for="NAME">Commodity Name</label><br>
+                <input id="cm" type="text">
+                <br>
+                <label for="COST">Commodity Cost Price</label><br>
+                <input id="cost-price" oninput="smartBusiness()" type="number"><br>
+                <label for="TRANS">Commodity Transportation</label><br>
+                <input id="transport" oninput="smartBusiness()" type="number">
+                <br>
+                <label for="QUANTITY"> Commodity Quantity</label><br>
+                <input id="quantity" oninput="smartBusiness()" type="text"><br>
+                <label for="SELLINGPRICE">Estimated Selling Price</label><br>
+                <input id="selling-price" type="text"><br>
+
+            </form>
+            
+        </div>
+        <div class="flex-container2">
+            <div class="two">
+                <form action="">
+                    <label class="ques" for="NAME"> Full Name: </label>
+                    <input id="ui" class="nm" type="text" />
+                    <label class="ques"> County </label>
+                    <select name="County" id="county">
+                      <option>GrandKru</option>
+                      <option>Sinoe</option>
+                      <option>Grand Gedeh</option>
+                      <option>Grand Bassa</option>
+                      <option>Nimba</option>
+                      <option>Montserrado</option>
+                      <option>Bobolu</option>
+                      <option>Bomi</option>
+                      <option>Grand Cape Mount</option>
+                      <option>Bomi</option>
+                      <option>Bong</option>
+                      <option>Margibi</option>
+                      <option>Lofa</option>
+                      <option>River Gee</option>
+                      <option>Maryland</option>
+                      <option>GrandKru</option>
+                    </select>
+                    
+                  </form>
+                  <button id="sumit" class="sub" onclick="myFunction()" >Submit</button>
+                 <p id="gen-ui" class="new-ui"></p>
+            </div>
+            <div class="three">
+              <h3>Business Tips</h3>
+              <div class="carousel">
+                <p class="mySlides">hi i lveo son</p>
+              <p class="mySlides">hi i lveo my daughter</p>
+              <p class="mySlides">hi i lveo my mom</p>
+              <p class="mySlides">hi i lveo my dad</p>
+              <p class="mySlides">hi i lveo my brothers</p>
+              <p class="mySlides">hi i lveo my sisters</p>
+              <p class="mySlides">hi i lveo my uncles</p>
+              <p class="mySlides">hi i lveo my aunties</p>
+              <p class="mySlides">hi i lveo my nephews</p>
+              <p class="mySlides">hi i lveo my nieces</p>
+              <p class="mySlides">hi i lveo my grandmom</p>
+
+              </div>
+              
+            </div>
+        </div>
+        
+    </div>
+</main>
+<footer>
+    <h2>Grow Profit</h2>
+    <p>All Right Reserved Nyenpandi Josephine Holder @2022</p>
+    <div>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </footer>
+  <script src="/public/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    align-items: center;
+    /* position: sticky; */
+    top: 0;
+    z-index: 2;
+  }
+  
+  header > .heading--container > h1 {
+    font-size: 1.6rem;
+  }
+  
+  .header > .nav {
+    width: 70%;
+    background-color:  rgba(7, 2, 2, 0.03);
+    padding: 1.5rem 0;
+  }
+  
+  .header > .nav > ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header > .nav > ul > a > li {
+    list-style: none;
+    padding: 0 0.5rem;
+  }
+  
+  .header > .nav > ul > a {
+    text-decoration: none;
+  }
+
+  .main{
+    display: -webkit-flex;
+    display: -ms-flex;
+     display: flex;
+  }
+
+ .main .flex-container{
+    position: relative;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    filter: drop-shadow(0.2em 0.2em 0.3em rgb(166, 166, 243));
+
+
+}
+
+.main > .flex-container > .one{
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-content: center;
+  display: flex;
+  width: 32rem;
+  max-height: 35rem;
+
+}
+
+*:focus{
+    outline: none;
+}
+
+.main .one  form{
+    
+    margin-top: 3rem;
+    
+}
+
+.main > .flex-container > .one > form > h3{
+    margin-bottom: 2rem;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.main > .flex-container > .one > form > input{
+  border: none;
+  border-bottom: 1.5px solid #000;
+  margin-bottom: 1.5rem;
+  outline: none;
+  width: 100%;
+
+}
+
+.main > .flex-container > .one > form > label {
+    font-weight: 600;
+    margin-bottom: 10rem;
+  }
+
+ 
+ .main .flex-container .two{
+  background-color: rgb(1, 1, 97);
+  border-top-right-radius: 10px;
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+  width: 32rem;
+  height: 25rem;
+}
+
+.new-ui{
+    width: 40%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    
+}
+
+.main .flex-container2 .two form{
+    margin-top: 5rem;
+    display: flex;
+    margin-left: 3rem;
+    flex-direction: row;
+}
+
+.main .flex-container .two form input{
+    width: 35%;
+    height: 1.1rem;
+}
+
+.main .flex-container .two form select{
+  width: fit-content;
+    height: 1.5rem;
+}
+
+button{
+  width: 30%;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: white;
+  margin-top: .8rem;
+  margin-left: 35%;
+  border: none;
+  filter: drop-shadow(0.2em 0.2em 0.3em rgb(166, 166, 243));
+}
+
+.three{
+    /* display: flex; */
+    color: #fff;
+    /* flex-direction: column; */
+    background-color: blue;
+    border-bottom-right-radius: 10px;
+    width: 32rem;
+    height: 10rem;
+    justify-content: center;
+}
+
+.main > .flex-container > .flex-container2 > .three > h3{
+  padding: 1.5rem;
+  margin-left: 11rem;
+
+}
+
+.carousel{
+  color: #000;
+  width: 40%;
+  height: fit-content;
+  border-radius: 5px;
+  background-color: white;
+  align-content: center;
+  margin-left: 11rem;
+}
+
+.main > .flex-container > .flex-container2 > .three > .carousel > .mySlides{
+  padding: 0.1rem;
+  justify-content: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 0;
+    background-color:  rgba(0,0,0,0.03);
+  }
+  
+  footer > h2 {
+    margin-left: 15%;
+    font-size: 1.5rem;
+  }
+
+
+@media only screen and (max-width: 57.13rem ) {
+    /* HEADER RESPONSIVENESS */
+  
+    .header {
+      
+      margin-left: 10%;
+    }
+     
+    /* MAIN BODY RESPONSIVENESS */
+      
+    .main .flex-container {
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      margin-left: 2.5rem;
+      position: relative;
+    }
+  
+    .main > .flex-container > .one {
+      padding-right: 1.5rem;
+      padding-left: 4rem;
+      width: 100%;
+    }
+  
+    .main > .flex-container > .one > form > input {
+      width: 100%;
+    }
+  .flex-container > .one{
+    flex-direction: column;
+  }
+    .main > .flex-container > .flex-container2 {
+    
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    /* height: 50%; */
+    
+       
+    }
+   .main > .flex-container > .flex-container2 > .two{
+    width: 100%;
+   }
+
+   .main > .flex-container > .flex-container2 > .three{
+    width: 100%;
+   }
+
+    .main .flex-container2 .two form{
+        margin-top: 5rem;
+        display: flex;
+        margin-left: 3rem;
+        flex-direction: column;
+    }
+  
+    /* FOOTER RESPONSIVENESS */
+    footer {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1.5rem 0;
+    }
+  
+    footer > h2,
+    p {
+      margin-left: 10%;
+    }
+  }
+  
